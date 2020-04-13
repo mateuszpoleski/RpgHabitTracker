@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RPG Habit Tracker</string>
+    <string name="title_activity_todo">ToDo\'s</string>
+    <string name="habits_btn_new">New</string>
+    <string name="habit_btn_stats">Stats</string>
+    <string name="please_enter_your_name_here">Please enter your name here</string>
+    <string name="continue_btn">Continue</string>
+    <string name="welcome_in_rph_habit_tracker">Welcome in RPH Habit Tracker!</string>
+    <string name="going_sleep_24"><![CDATA[Going sleep <24]]></string>
+    <string name="sunday">Sunday</string>
+    <string name="saturday">Saturday</string>
+    <string name="friday">Friday</string>
+    <string name="thursday">Thursday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="monday">Monday</string>
+    <string name="cancle">Cancle</string>
+    <string name="create">Create</string>
+    <string name="hard">Hard</string>
+    <string name="medium">Medium</string>
+    <string name="easy">Easy</string>
+    <string name="days_of_the_week">Days of the week:</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="enter_name_of_your_new_habit">Enter name of your new habit:</string>
+    <string name="change_yout_habit">Change yout habit:</string>
+    <string name="change">Change</string>
+    <string name="position">Position:</string>
+    <string name="delate">Delate</string>
+    <string name="neww">New</string>
+    <string name="bought">Bought</string>
+    <string name="name">Name</string>
+    <string name="buy">BUY</string>
+    <string name="_33">33</string>
+    <string name="x">X</string>
+    <string name="this_feature_is_in_my_todo_list_for_now">This feature is in my todo list for now.</string>
+    <string name="habits">Habits</string>
+    <string name="todo_s">ToDo\'s</string>
+    <string name="profile">Profile</string>
+    <string name="shop">Shop</string>
+    <string name="lvl">Lvl.</string>
+    <string name="skills">Skills:</string>
+    <string name="basic_statistics">Basic statistics:</string>
+    <string name="available_skill_points">Available skill points:</string>
+    <string name="summarize_nday">Summarize \nday</string>
+    <string name="reload">Reload</string>
+    <string name="okey">Okey</string>
+    <string name="congratulations_you_have_reached_level">Congratulations, you have reached level:</string>
+    <string name="_0">0</string>
+    <string name="habits_info">After you finish your day, you should always click \"Summarize day\" button,
+        so that data from that day will be saved, and you will get new tasks for the next day. If you forget to click it,
+        then next time you should click \"Reload\" button instead, to get correct tasks for current day.</string>
+</resources>

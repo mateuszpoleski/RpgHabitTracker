@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="?android:colorBackground">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="380dp"
+            android:gravity="center"
+            android:text="@string/congratulations_you_have_reached_level"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dialog_lvlup_lvl"
+            android:layout_width="173dp"
+            android:layout_height="201dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="#AF370F"
+            android:textSize="120sp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/dialog_lvlup_com"
+            android:layout_width="323dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/dialog_lvlup_btn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="68dp"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/dialog_lvlup_btn"
+            android:layout_width="184dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/dialog_lvlup_lvl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginRight="114dp"
+            android:background="@drawable/background_buttons"
+            android:text="@string/continue_btn" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

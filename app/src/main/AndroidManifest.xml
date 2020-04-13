@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="habitapp.example.rpghabittracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logobiale"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logobiale_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_shop_bought"
+            android:parentActivityName="habitapp.example.rpghabittracker.activity_shop"></activity>
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_habits_stats"
+            android:parentActivityName="habitapp.example.rpghabittracker.activity_habits" />
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_shop"
+            android:parentActivityName="habitapp.example.rpghabittracker.MainActivity" />
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_profile"
+            android:parentActivityName="habitapp.example.rpghabittracker.MainActivity" />
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_todo"
+            android:parentActivityName="habitapp.example.rpghabittracker.MainActivity" />
+        <activity
+            android:name="habitapp.example.rpghabittracker.activity_habits"
+            android:parentActivityName="habitapp.example.rpghabittracker.MainActivity" />
+        <activity android:name="habitapp.example.rpghabittracker.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="habitapp.example.rpghabittracker.DailyCheck"
+            android:exported="true" />
+    </application>
+
+</manifest>

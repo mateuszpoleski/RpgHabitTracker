@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:colorBackground">
+
+
+        <TextView
+            android:id="@+id/dialog_changehab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:gravity="center|start"
+            android:text="@string/change_yout_habit"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/dialog_changehab_habname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginRight="102dp"
+            android:ems="10"
+            android:hint="@string/going_sleep_24"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/dialog_changehab_title_dif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_habname"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/difficulty"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/dialog_changehab_title_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_habname"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/dialog_changehab_title_dif"
+            android:layout_toRightOf="@+id/dialog_changehab_title_dif"
+            android:text="@string/days_of_the_week"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/dialog_changehab_radio_group"
+            android:layout_width="178dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/dialog_changehab_title_dif"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="17dp">
+
+            <RadioButton
+                android:id="@+id/dialog_changehab_radio_dif_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/easy" />
+
+            <RadioButton
+                android:id="@+id/dialog_changehab_radio_dif_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/medium" />
+
+            <RadioButton
+                android:id="@+id/dialog_changehab_radio_dif_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_title_days"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            android:text="@string/monday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/tuesday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/wednesday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/thursday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/friday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/saturday" />
+
+        <CheckBox
+            android:id="@+id/dialog_changehab_box7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_box6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="@string/sunday" />
+
+
+        <TextView
+            android:id="@+id/dialog_changehab_tw_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_radio_group"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/position"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/dialog_changehab_pos"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_changehab_radio_group"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/dialog_changehab_tw_pos"
+            android:layout_toRightOf="@+id/dialog_changehab_tw_pos"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dialog_changehab_tw_pos"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="22dp"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="389dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp">
+
+            <Button
+                android:id="@+id/dialog_changehab_btn_delate"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="24dp"
+                android:layout_toStartOf="@+id/dialog_changehab_btn_cancle"
+                android:layout_toLeftOf="@+id/dialog_changehab_btn_cancle"
+                android:layout_toEndOf="@+id/dialog_changehab_btn_change"
+                android:layout_toRightOf="@+id/dialog_changehab_btn_change"
+                android:background="@drawable/background_buttons"
+                android:text="@string/delate"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/dialog_changehab_btn_cancle" />
+
+            <Button
+                android:id="@+id/dialog_changehab_btn_change"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/background_buttons"
+                android:text="@string/change"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dialog_changehab_btn_cancle"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/dialog_changehab_btn_cancle"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/background_buttons"
+                android:text="@string/cancle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dialog_changehab_btn_delate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/dialog_changehab_btn_change" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
